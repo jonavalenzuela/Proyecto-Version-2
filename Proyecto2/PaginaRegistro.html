@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="StyleRegistro.css">
+</head>
+<body>
+    <div class="formulario">
+        <h1>Registro de Cuenta</h1>
+        <form method="post">
+            <div class="nombre">
+                <input type="text" name="nombre" id="nombre" minlength="3" maxlength="20" required>
+                <label for="nombre">Ingrese su Nombre:</label>
+            </div>
+            <div class="nombre">
+                <input type="text" name="apellidoP" id="apellidoP" minlength="3" maxlength="20" required>                
+                <label for="apellidoP">Ingrese su Apellido Paterno:</label>
+            </div>
+            <div class="nombre">
+                <input type="text" name="apellidoM" id="apellidoM" minlength="3" maxlength="20" required>                
+                <label for="apellidoM">Ingrese su Apellido Materno:</label>
+            </div>
+
+            <div class="Fecha">
+                <input type="date" name="fecha" id="fecha" required>
+                <label for="fecha">Indique su Fecha de Nacimiento:</label>
+            </div>
+            <div class="nombre">
+                <input type="text" name="rut" id="rut" minlength="9" maxlength="10" required>                
+                <label for="rut">Ingrese su Rut:</label>
+            </div>
+            <div class="nombre">
+                <input type="text" name="fono" id="fono" minlength="9" maxlength="12">                
+                <label for="fono">Ingrese su Telefono o Celular:</label>
+            </div>
+            <div class="nombre">
+                <input type="email" name="correo" id="correo" required>                    
+                <label for="correo">Ingrese su Correo Electronico:</label>
+            </div>
+            <input type="submit" formaction="" value="Registrarse">
+        </form>
+    </div>        
+</body>
+</html>

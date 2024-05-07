@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    background: linear-gradient(150deg, #6C3483, #58D68D);
+    height: 120vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.slider-frame {
+    width: 970px;
+    height: 300px;
+    margin: 50px auto 0;
+    overflow: hidden;
+
+    
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 16s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+.contenedor>div{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
+    background-color: #2D4263;
+    border-radius: 20px;
+}
+
+.contenedor>div:hover{
+    background-color: #11294d;
+}
+
+.informacion{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.informacion>p:first-child{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.informacion .precio{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.informacion button{
+    background-color: silver;
+    width: 100px;
+    height: 35;
+    border-radius: 10px;
+    border: none;
+
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.info button{
+    background-color: silver;
+    width: 100px;
+    height: 35;
+    border-radius: 10px;
+    border: none;
+
+    font-size: 17px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.imgen {
+    width: 320px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.imagen {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px 20px 20px 20px;
+    margin: 0 50px;
+}
+
+header{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    gap: 15%;
+    height: 50px;
+    top: 0;
+    width: 50px;
+}
+
+.carrito{
+    filter: invert(100%);
+    width: 50px;
+    height: auto;
+}
+
+.my-navbar {
+    background-color: #ff5733; 
+    color: white;
+}
+
+
