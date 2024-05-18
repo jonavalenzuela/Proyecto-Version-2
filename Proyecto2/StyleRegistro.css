@@ -45,7 +45,7 @@ form .nombre{
 
 .nombre label{
     position: absolute;
-    top: 50%;
+    top: 0%;
     left: 5px;
     color: #adadad;
     transform: translateY(-50%);
@@ -63,6 +63,20 @@ form .nombre{
     height: 2px;
     background: #6C3483;
     transition: 5s;
+}
+
+.errores{
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    background: red;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    color: #fff;
+    display: none;
+    font-size: 14px;
+    margin-top: -80px;
+    margin-left: 340px;
+    padding: 10px;
+    position: absolute;
 }
 
 .nombre input:focus ~ label,
@@ -90,7 +104,7 @@ input[type="submit"]{
 
 nput[type="submit"]:hover{
     border-color: purple;
-    transition: 5s;
+    transition: 0.5s;
 }
 
 form .Fecha{
@@ -130,6 +144,7 @@ form .Fecha{
     background: #6C3483;
     transition: 5s;
 }
+
 
 .Fecha input:focus ~ label,
 .Fecha input:focus ~ label{

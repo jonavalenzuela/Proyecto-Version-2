@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    background: linear-gradient(150deg, #6C3483, #58D68D);
+    height: 150vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.my-navbar {
+    background-color: #FFA500; 
+    color: white;
+}

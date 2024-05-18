@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <link rel="stylesheet" href="StyleRegistro.css">
 </head>
 <body>
@@ -11,36 +12,43 @@
         <h1>Registro de Cuenta</h1>
         <form method="post">
             <div class="nombre">
-                <input type="text" name="nombre" id="nombre" minlength="3" maxlength="20" required>
-                <label for="nombre">Ingrese su Nombre:</label>
+                <input type="text" name="nombre" id="itNombre" minlength="3" maxlength="20" required>
+                <label>Ingrese su Nombre:</label>
+                <div id="mensaje1" class="errores">Dame tu nombre</div>
             </div>
             <div class="nombre">
-                <input type="text" name="apellidoP" id="apellidoP" minlength="3" maxlength="20" required>                
-                <label for="apellidoP">Ingrese su Apellido Paterno:</label>
+                <input type="text" name="apellidoP" id="itApellidoP" minlength="3" maxlength="20" required>                
+                <label>Ingrese su Apellido Paterno:</label>
+                <div id="mensaje2" class="errores">Dame tu apellido Paterno</div>
             </div>
             <div class="nombre">
-                <input type="text" name="apellidoM" id="apellidoM" minlength="3" maxlength="20" required>                
-                <label for="apellidoM">Ingrese su Apellido Materno:</label>
+                <input type="text" name="apellidoM" id="itApellidoM" minlength="3" maxlength="20" required>                
+                <label>Ingrese su Apellido Materno:</label>
+                <div id="mensaje3" class="errores">Dame tu apellido Materno</div>
             </div>
 
             <div class="Fecha">
                 <input type="date" name="fecha" id="fecha" required>
-                <label for="fecha">Indique su Fecha de Nacimiento:</label>
+                <label>Indique su Fecha de Nacimiento:</label>
             </div>
             <div class="nombre">
-                <input type="text" name="rut" id="rut" minlength="9" maxlength="10" required>                
-                <label for="rut">Ingrese su Rut:</label>
+                <input type="text" name="rut" id="itRut" minlength="9" maxlength="10" required>                
+                <label>Ingrese su Rut:</label>
+                <div id="mensaje4" class="errores">Dame tu rut</div>
             </div>
             <div class="nombre">
-                <input type="text" name="fono" id="fono" minlength="9" maxlength="12">                
-                <label for="fono">Ingrese su Telefono o Celular:</label>
+                <input type="text" name="fono" id="itFono" minlength="9" maxlength="12" required>                
+                <label>Ingrese su Telefono o Celular:</label>
+                <div id="mensaje5" class="errores">Dame tu numero</div>
             </div>
             <div class="nombre">
-                <input type="email" name="correo" id="correo" required>                    
-                <label for="correo">Ingrese su Correo Electronico:</label>
+                <input type="email" name="correo" id="itCorreo" required>                    
+                <label>Ingrese su Correo Electronico:</label>
+                <div id="mensaje6" class="errores">Dame tu mail correcto</div>
             </div>
-            <input type="submit" formaction="" value="Registrarse">
+            <input type="submit" id="bEnviar" formaction="Login.html"  value="Registrarse">
         </form>
-    </div>        
+    </div>
+<script src="registro.js"></script>    
 </body>
 </html>
